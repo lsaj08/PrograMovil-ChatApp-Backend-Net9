@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Usuarios Conectados";
+}
+
+<h1>Usuarios Que Se Han Conectado.</h1>
+
+<h3>Tomado desde la la base datos.</h3>
+
+<!-- 🔄 Botón para refrescar la página y recargar los datos -->
+<form method="get">
+    <button type="submit">🔄 Refrescar</button>
+</form>
+
+<!-- 🧾 Tabla de usuarios conectados -->
+<table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Usuario</th>
+            <th>Fecha de Conexión</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var usuario in Model.Usuarios)
+        {
+            <tr>
+                <td>@usuario.Id</td>
+                <td>@usuario.Username</td>
+                <td>@usuario.FechaConexion.ToString("yyyy-MM-dd hh:mm tt")</td>
+            </tr>
+        }
+    </tbody>
+</table>

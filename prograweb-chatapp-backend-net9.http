@@ -1,0 +1,6 @@
+@prograweb_chatapp_backend_net9_HostAddress = http://localhost:5242
+
+GET {{prograweb_chatapp_backend_net9_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
