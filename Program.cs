@@ -18,8 +18,12 @@ builder.Services.AddCors(options =>
                           policy.SetIsOriginAllowed(origin =>
                               origin == "https://ashy-bay-0ea136f10.2.azurestaticapps.net" ||
                               origin == "https://programovil.net" ||
-                              origin == "http://localhost:3000"
+                              origin == "http://localhost:3000" ||
+                              origin == "http://10.0.2.2:3000" ||
+                              origin == "http://localhost:5173" ||
+                              origin == "http://10.0.2.2:5173"
                           )
+
                           .AllowAnyHeader()
                           .AllowAnyMethod()
                           .AllowCredentials();
