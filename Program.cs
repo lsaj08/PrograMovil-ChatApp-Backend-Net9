@@ -16,7 +16,7 @@ builder.Services.AddCors(options =>
                       policy =>
                       {
                           policy.SetIsOriginAllowed(origin =>
-                              origin == "https://thankful-sand-027432710.1.azurestaticapps.net" ||
+                              origin == "https://ashy-bay-0ea136f10.2.azurestaticapps.net" ||
                               origin == "https://programovil.net" ||
                               origin == "http://localhost:3000"
                           )
