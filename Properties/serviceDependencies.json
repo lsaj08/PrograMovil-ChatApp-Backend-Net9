@@ -1,10 +1,5 @@
 {
   "dependencies": {
-    "signalr1": {
-      "type": "signalr",
-      "connectionId": "Azure:SignalR:ConnectionString",
-      "dynamicId": null
-    },
     "secrets1": {
       "type": "secrets",
       "dynamicId": null
@@ -12,6 +7,11 @@
     "mssql1": {
       "type": "mssql",
       "connectionId": "ConnectionStrings:DefaultConnection1",
+      "dynamicId": null
+    },
+    "signalr1": {
+      "type": "signalr",
+      "connectionId": "Azure:SignalR:ConnectionString",
       "dynamicId": null
     }
   }

@@ -1,13 +1,5 @@
 {
   "dependencies": {
-    "signalr1": {
-      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('serviceConnectorResourceGroupName')]/providers/Microsoft.ServiceLinker/locations/westus/connectors/AzureSignalRConnectionString_7106A5C2A8",
-      "secretStore": "LocalSecretsFile",
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.SignalRService/SignalR/prograweb-chatapp",
-      "type": "signalr.azure",
-      "connectionId": "Azure:SignalR:ConnectionString",
-      "dynamicId": null
-    },
     "secrets1": {
       "type": "secrets.user",
       "dynamicId": null
@@ -18,6 +10,14 @@
       "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/prograweb-chatapp-sqlserver/databases/chatdb",
       "type": "mssql.azure",
       "connectionId": "ConnectionStrings:DefaultConnection1",
+      "dynamicId": null
+    },
+    "signalr1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('serviceConnectorResourceGroupName')]/providers/Microsoft.ServiceLinker/locations/centralus/connectors/AzureSignalRConnectionString_B347BB4948",
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.SignalRService/SignalR/programovil-chatapp-signalr",
+      "type": "signalr.azure",
+      "connectionId": "Azure:SignalR:ConnectionString",
       "dynamicId": null
     }
   }
