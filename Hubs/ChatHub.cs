@@ -13,7 +13,7 @@ namespace prograweb_chatapp_backend_net9.Hubs
         /// ⚙️ Contador estático de usuarios conectados
         private static int _connectedUsers = 0;
 
-        private readonly ILogger<ChatHub> _logger;                      // Para registrar eventos y errores
+        private readonly ILogger<ChatHub> _logger;                     // Para registrar eventos y errores
         private readonly IServiceScopeFactory _scopeFactory;           // Para generar un contexto separado en background
 
         /// 🚀 Constructor del Hub con inyección de dependencias
@@ -61,7 +61,7 @@ namespace prograweb_chatapp_backend_net9.Hubs
             {
                 var fechaIso = GetCostaRicaTimeIso();
 
-                // 1️⃣ Guardar la conexión del usuario en la base de datos de forma asíncrona y segura
+                //   Guardar la conexión del usuario en la base de datos de forma asíncrona y segura
                 //    Utilizamos Task.Run para no bloquear el hilo principal
                 //    Creamos un nuevo scope manualmente porque el contexto original puede estar fuera de alcance
                 _ = Task.Run(async () =>
