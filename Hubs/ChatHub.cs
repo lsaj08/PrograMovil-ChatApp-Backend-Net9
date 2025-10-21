@@ -140,5 +140,19 @@ namespace prograweb_chatapp_backend_net9.Hubs
 
             await base.OnDisconnectedAsync(exception);
         }
+
+        // 🔐 Relay de ciphertext (no tocar contenido)
+        public Task SendCipher(string payloadJson)
+        {
+            _logger.LogDebug("SendCipher size={len}", payloadJson?.Length ?? 0);
+            return Clients.All.SendAsync("ReceiveCipher", payloadJson);
+        }
+
+        // 🔑 Intercambio de claves públicas (relay puro)
+        public Task SharePublicKey(string publicKeyJson)
+        {
+            _logger.LogDebug("SharePublicKey size={len}", publicKeyJson?.Length ?? 0);
+            return Clients.All.SendAsync("ReceivePublicKey", publicKeyJson);
+        }
     }
 }

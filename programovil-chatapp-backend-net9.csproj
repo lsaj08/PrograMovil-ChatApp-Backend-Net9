@@ -13,6 +13,7 @@
     <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.2.0" />
     <PackageReference Include="Microsoft.Azure.SignalR" Version="1.*" />
     <PackageReference Include="Microsoft.Azure.SignalR.Management" Version="1.32.0" />
+    <PackageReference Include="Microsoft.Azure.SignalR.Protocols" Version="1.32.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.0-rc.1.25451.107">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
